@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!--========== ICONS ==========-->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <!--========== CSS ==========-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <title>Home | WebNyaTegar</title>
+</head>
+<body>
+  
+  <!--========== HEADER ==========-->
+  <header class="header">
+    <div class="header__container">
+      <img src="assets/img/profile.png" alt="" class="header__img">
+
+      <a href="#" class="header__logo">Tegar.</a>
+
+      <div class="header__search">
+        <input type="search" placeholder="Search" class="header__input">
+        <i class="bx bx-search header__icon"></i>
+      </div>
+
+      <div class="header__toggle">
+        <i class="bx bx-menu" id="header-toggle"></i>
+      </div>
+    </div>
+  </header>
+
+  <!--========== NAV ==========-->
+  <nav class="nav" id="navbar">
+    <nav class="nav__container">
+      <div>
+
+        <a href="" class="nav__link nav__logo">
+          <i class='bx bxs-bot nav__icon'></i>
+          <span class="nav__logo-name">Tegar.</span>
+        </a>
+
+        <div class="nav__list">
+
+          <div class="nav__items">
+
+            <h3 class="nav__subtitles">Profile</h3>
+
+            <a href="#" class="nav__link active">
+              <i class="bx bx-home nav__icon"></i>
+              <span class="nav__name">Home</span>
+            </a>
+
+            <div class="nav__dropdown">
+              <a href="#" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>
+                <span class="nav__name">Profile</span>
+                <i class="bx bx-chevron-down nav__icon nav__dropdown-icon"></i>
+              </a>
+
+              <div class="nav__dropdown-collapse">
+                <div class="nav__dropdown-content">
+                  <div class="nav__dropdown-items">Passwords</div>
+                  <div class="nav__dropdown-items">Mail</div>
+                  <div class="nav__dropdown-items">Accounts</div>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="nav__link">
+              <i class="bx bx-message-rounded nav__icon"></i>
+              <span class="nav__name">Messages</span>
+            </a>
+
+          </div>
+
+          <div class="nav__items">
+
+            <h3 class="nav__subtitles">Menu</h3>
+
+            <div class="nav__dropdown">
+              <a href="#" class="nav__link">
+                <i class="bx bx-bell nav__icon"></i>
+                <span class="nav__name">Notifications</span>
+                <i class="bx bx-chevron-down nav__icon nav__dropdown-icon"></i>
+              </a>
+
+              <div class="nav__dropdown-collapse">
+                <div class="nav__dropdown-content">
+                  <div class="nav__dropdown-items">Public</div>
+                  <div class="nav__dropdown-items">Program</div>
+                  <div class="nav__dropdown-items">Silenced</div>
+                  <div class="nav__dropdown-items">Blocked</div>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="nav__link">
+              <i class="bx bx-compass nav__icon"></i>
+              <span class="nav__name">Explore</span>
+            </a>
+
+            <a href="#" class="nav__link">
+              <i class="bx bx-bookmark nav__icon"></i>
+              <span class="nav__name">Saved</span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <a href="#" class="nav__link nav__logout">
+        <i class="bx bx-log-out nav__icon"></i>
+        <span class="nav__name">Log Out</span>
+      </a>
+
+    </nav>
+  </nav>
+
+  <!--========== CONTENT ==========-->
+  <main class="main">
+
+    <section class="section__hero">
+      <div class="hero__text">
+        <div class="hero__title">Tegar</div>
+        <div class="hero__subtitle">is welcoming you to this website.</div>
+      </div>
+    </section>
+
+    <section class="section__game">
+      <div class="game__head head__section">Tic Tac Toe</div>
+      <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+      </div>
+      <div class="winning__message" id="winningMessage">
+        <div data-winning-message-text>X Wins!</div>
+        <button id="restartButton">Restart</button>
+      </div>
+    </section>
+
+    <section class="section__desc">
+      <div class="desc__head head__section">Description</div>
+      <div class="desc__grid">
+        <img src="assets/img/Logo.png" alt="" class="desc__image">
+        <div class="desc__text">
+          <div class="desc__title">The Logo</div>
+          <div class="desc__subtitle">This logo was made by me and have a meaning from its shape and color.</div>
+        </div>
+        <div class="desc__text">
+          <div class="desc__title">T Shape</div>
+          <div class="desc__subtitle">It is the acronym of my name, Tegar.</div>
+        </div>
+        <div class="desc__text">
+          <div class="desc__title">Blue Color</div>
+          <div class="desc__subtitle">Besides it is my favorite color, blue represents calmness, secure, and orderly. Which matches with my character.</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--========== MAIN JS ==========-->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/tic-tac-toe.js"></script>
+
+</body>
+</html>
